@@ -14,6 +14,9 @@
 		887596C924E8435F00630DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 887596C824E8435F00630DC7 /* Assets.xcassets */; };
 		887596CC24E8435F00630DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 887596CA24E8435F00630DC7 /* LaunchScreen.storyboard */; };
 		887596D424E84E8800630DC7 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887596D324E84E8800630DC7 /* CharacterTableViewCell.swift */; };
+		887596D924E85DBE00630DC7 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887596D824E85DBE00630DC7 /* Character.swift */; };
+		887596DB24E85ED600630DC7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887596DA24E85ED600630DC7 /* DataManager.swift */; };
+		887596DD24E85EE300630DC7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887596DC24E85EE300630DC7 /* NetworkManager.swift */; };
 		DFC1F9642F91DCA48676C65C /* Pods_StarWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E6F483F74DC66FF4529B34 /* Pods_StarWars.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +31,9 @@
 		887596CB24E8435F00630DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		887596CD24E8435F00630DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		887596D324E84E8800630DC7 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		887596D824E85DBE00630DC7 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		887596DA24E85ED600630DC7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		887596DC24E85EE300630DC7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AA836C91F6B600D44C4CFCB7 /* Pods-StarWars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWars.release.xcconfig"; path = "Target Support Files/Pods-StarWars/Pods-StarWars.release.xcconfig"; sourceTree = "<group>"; };
 		B461F4992DB785961E1A43B4 /* Pods-StarWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWars.debug.xcconfig"; path = "Target Support Files/Pods-StarWars/Pods-StarWars.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,14 +90,41 @@
 			children = (
 				887596BF24E8435800630DC7 /* AppDelegate.swift */,
 				887596C124E8435800630DC7 /* SceneDelegate.swift */,
-				887596C324E8435900630DC7 /* ViewController.swift */,
-				887596D324E84E8800630DC7 /* CharacterTableViewCell.swift */,
-				887596C524E8435900630DC7 /* Main.storyboard */,
+				887596DA24E85ED600630DC7 /* DataManager.swift */,
+				887596DC24E85EE300630DC7 /* NetworkManager.swift */,
+				887596D524E85D8C00630DC7 /* Controllers */,
+				887596D624E85D9E00630DC7 /* Views */,
+				887596D724E85DAB00630DC7 /* Models */,
 				887596C824E8435F00630DC7 /* Assets.xcassets */,
 				887596CA24E8435F00630DC7 /* LaunchScreen.storyboard */,
 				887596CD24E8435F00630DC7 /* Info.plist */,
 			);
 			path = StarWars;
+			sourceTree = "<group>";
+		};
+		887596D524E85D8C00630DC7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				887596C324E8435900630DC7 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		887596D624E85D9E00630DC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				887596D324E84E8800630DC7 /* CharacterTableViewCell.swift */,
+				887596C524E8435900630DC7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		887596D724E85DAB00630DC7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				887596D824E85DBE00630DC7 /* Character.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				887596C424E8435900630DC7 /* ViewController.swift in Sources */,
+				887596DB24E85ED600630DC7 /* DataManager.swift in Sources */,
 				887596C024E8435800630DC7 /* AppDelegate.swift in Sources */,
+				887596DD24E85EE300630DC7 /* NetworkManager.swift in Sources */,
+				887596D924E85DBE00630DC7 /* Character.swift in Sources */,
 				887596C224E8435800630DC7 /* SceneDelegate.swift in Sources */,
 				887596D424E84E8800630DC7 /* CharacterTableViewCell.swift in Sources */,
 			);

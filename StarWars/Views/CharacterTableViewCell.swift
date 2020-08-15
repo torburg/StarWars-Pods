@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CharacterTableViewCell: UITableViewCell {
     
@@ -27,9 +28,18 @@ class CharacterTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func onBind(with indexPath: IndexPath) {
-        nameLabel.text = "name"
-        homeworlLabel.text = "homeworld"
+    func onBind(with item: Character) {
+        nameLabel.text = item.name
+        switch item.homeworld {
+        case .string(let planet):
+            homeworlLabel.text = planet.capitalized
+        case .stringArray(let planets):
+            homeworlLabel.text = planets.first?.capitalized
+        default:
+            homeworlLabel.text = ""
+        }
+        let imageURL = URL(string: item.avatar)
+        avatarImage.sd_setImage(with: imageURL, completed: nil)
     }
 
 }
