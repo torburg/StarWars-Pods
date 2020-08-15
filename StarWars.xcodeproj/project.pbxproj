@@ -13,6 +13,7 @@
 		887596C724E8435900630DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 887596C524E8435900630DC7 /* Main.storyboard */; };
 		887596C924E8435F00630DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 887596C824E8435F00630DC7 /* Assets.xcassets */; };
 		887596CC24E8435F00630DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 887596CA24E8435F00630DC7 /* LaunchScreen.storyboard */; };
+		887596D424E84E8800630DC7 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887596D324E84E8800630DC7 /* CharacterTableViewCell.swift */; };
 		DFC1F9642F91DCA48676C65C /* Pods_StarWars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E6F483F74DC66FF4529B34 /* Pods_StarWars.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		887596C824E8435F00630DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		887596CB24E8435F00630DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		887596CD24E8435F00630DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		887596D324E84E8800630DC7 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		AA836C91F6B600D44C4CFCB7 /* Pods-StarWars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWars.release.xcconfig"; path = "Target Support Files/Pods-StarWars/Pods-StarWars.release.xcconfig"; sourceTree = "<group>"; };
 		B461F4992DB785961E1A43B4 /* Pods-StarWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWars.debug.xcconfig"; path = "Target Support Files/Pods-StarWars/Pods-StarWars.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				887596BF24E8435800630DC7 /* AppDelegate.swift */,
 				887596C124E8435800630DC7 /* SceneDelegate.swift */,
 				887596C324E8435900630DC7 /* ViewController.swift */,
+				887596D324E84E8800630DC7 /* CharacterTableViewCell.swift */,
 				887596C524E8435900630DC7 /* Main.storyboard */,
 				887596C824E8435F00630DC7 /* Assets.xcassets */,
 				887596CA24E8435F00630DC7 /* LaunchScreen.storyboard */,
@@ -209,6 +212,7 @@
 				887596C424E8435900630DC7 /* ViewController.swift in Sources */,
 				887596C024E8435800630DC7 /* AppDelegate.swift in Sources */,
 				887596C224E8435800630DC7 /* SceneDelegate.swift in Sources */,
+				887596D424E84E8800630DC7 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
